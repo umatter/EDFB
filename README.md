@@ -15,6 +15,7 @@ A collection of Python and R notebooks for teaching and practicing core data sci
     - Clustering_and_Credit_Risk_R.ipynb
 - data/
   - banking.csv (optional; auto-downloaded if missing)
+  - borrower_companies.csv (optional; auto-downloaded if missing)
 - data_BTC.csv (optional; auto-downloaded or simulated if missing)
 
 ## Open in Google Colab
@@ -40,6 +41,9 @@ Recommended student workflow:
 
 - banking.csv: expected at data/banking.csv. If not present, notebooks will download from:
   - https://raw.githubusercontent.com/umatter/EDFB/main/data/banking.csv
+- borrower_companies.csv: expected at data/borrower_companies.csv. If not present, notebooks will download from:
+  - https://raw.githubusercontent.com/umatter/EDFB/main/data/borrower_companies.csv
+  Used in the Clustering and Credit Risk notebooks (both Python and R).
 - data_BTC.csv: expected at repo root (./data_BTC.csv). If not present, notebooks will attempt to download the same filename from the repo; if unavailable, they simulate a small time series so the notebooks remain runnable.
 
 ## Reproducibility
