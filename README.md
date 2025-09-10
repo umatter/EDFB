@@ -9,6 +9,8 @@ A collection of Python and R notebooks for teaching and practicing core data sci
     - EDFB_Digital_Finance_&_Banking_Linear_Models_1.ipynb
     - EDFB_Digital_Finance_&_Banking_Logistic_Regression.ipynb
     - Clustering_and_Credit_Risk.ipynb
+    - groupwork/
+      - Group_Work_AS_2025.ipynb
   - R/
     - EDFB_Digital_Finance_&_Banking_Linear_Models_1_R.ipynb
     - EDFB_Digital_Finance_&_Banking_Logistic_Regression_R.ipynb
@@ -26,6 +28,7 @@ You can run each notebook directly in your browser using Google Colab. You need 
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/EDFB_Digital_Finance_%26_Banking_Linear_Models_1.ipynb) Linear Models (Univariate)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/EDFB_Digital_Finance_%26_Banking_Logistic_Regression.ipynb) Logistic Regression
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/Clustering_and_Credit_Risk.ipynb) Clustering and Credit Risk
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/groupwork/Group_Work_AS_2025.ipynb) **Group Work AS 2025: ESG Investment Analysis & ML Portfolio Optimization**
 - R
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/EDFB_Digital_Finance_%26_Banking_Linear_Models_1_R.ipynb) Linear Models (Univariate, R)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/EDFB_Digital_Finance_%26_Banking_Logistic_Regression_R.ipynb) Logistic Regression (R)
