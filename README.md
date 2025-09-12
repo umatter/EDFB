@@ -42,18 +42,17 @@ Recommended student workflow:
 
 ## Datasets
 
-- banking.csv: expected at data/banking.csv. If not present, notebooks will download from:
-  - https://raw.githubusercontent.com/umatter/EDFB/main/data/banking.csv
-- borrower_companies.csv: expected at data/borrower_companies.csv. If not present, notebooks will download from:
-  - https://raw.githubusercontent.com/umatter/EDFB/main/data/borrower_companies.csv
-  Used in the Clustering and Credit Risk notebooks (both Python and R).
-- data_BTC.csv: expected at repo root (./data_BTC.csv). If not present, notebooks will attempt to download the same filename from the repo; if unavailable, they simulate a small time series so the notebooks remain runnable.
+Datasets are either provided in the `data/` folder or are directly downloaded by the notebooks from other sources. See the noteboooks for details on the datasets used.
 
 ## Reproducibility
 
 - Python notebooks pin library versions in the top “Setup” cell (pip installs).
 - R notebooks use a “Setup” cell that installs packages from the Posit Package Manager binary mirror for fast, reproducible installs on Colab.
 - Notes at the top of each notebook indicate the runtime versions they were tested on.
+
+## Acknowledgements
+
+Original Python notebooks were created by [Branka Hadji Misheva](https://www.bfh.ch/en/about-bfh/people/w76zvjktchs5/). R notebooks and groupwork notebook by [Ulrich Matter]((umatter.github.io) with assistance from [Claude Code](https://www.anthropic.com/claude-code) and reviewed by o3 and GPT-5.
 
 ## Contributing
 
