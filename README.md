@@ -8,12 +8,14 @@ A collection of Python and R notebooks for teaching and practicing core data sci
   - Python/
     - EDFB_Digital_Finance_&_Banking_Linear_Models_1.ipynb
     - EDFB_Digital_Finance_&_Banking_Logistic_Regression.ipynb
+    - 03_EDFB_Advanced_Models_Python.ipynb
     - Clustering_and_Credit_Risk.ipynb
     - groupwork/
       - Group_Work_AS_2025.ipynb
   - R/
-    - EDFB_Digital_Finance_&_Banking_Linear_Models_1_R.ipynb
-    - EDFB_Digital_Finance_&_Banking_Logistic_Regression_R.ipynb
+    - 01_EDFB_Linear_Models_1.ipynb
+    - 02_EDFB_Logistic_Regression.ipynb
+    - 03_EDFB_Advanced_Models_R.ipynb
     - Clustering_and_Credit_Risk_R.ipynb
 - data/
   - banking.csv (optional; auto-downloaded if missing)
@@ -27,11 +29,13 @@ You can run each notebook directly in your browser using Google Colab. You need 
 - Python
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/01_EDFB_Linear_Models_1.ipynb) Linear Models (Univariate)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python//02_EDFB_Logistic_Regression.ipynb) Logistic Regression
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/03_EDFB_Advanced_Models_Python.ipynb) Advanced Models: Lasso, Trees, Random Forests, Boosting & Causal ML
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/Clustering_and_Credit_Risk.ipynb) Clustering and Credit Risk
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/groupwork/Group_Work_AS_2025.ipynb) **Group Work AS 2025: ESG Investment Analysis & ML Portfolio Optimization**
 - R
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/01_EDFB_Linear_Models_1.ipynb) Linear Models (Univariate, R)
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/02_EDFB_Logistic_Regression.ipynb) Logistic Regression (R)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/02_EDFB_Logistic_Regression.ipynb) Logistic Regression (R)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/03_EDFB_Advanced_Models_R.ipynb) Advanced Models: Lasso, Trees, Random Forests, Boosting & Causal ML (R)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/Clustering_and_Credit_Risk_R.ipynb) Clustering and Credit Risk (R)
 
 Recommended student workflow:
