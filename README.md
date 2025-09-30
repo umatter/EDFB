@@ -28,6 +28,7 @@ You can run each notebook directly in your browser using Google Colab. You need 
 
 - Python
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/01_EDFB_Linear_Models_1.ipynb) Linear Models (Univariate)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/solutions/01_EDFB_Linear_Models_1_Exercise_Solutions.ipynb)) Linear Models Exercise Solutions
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python//02_EDFB_Logistic_Regression.ipynb) Logistic Regression
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/03_EDFB_Advanced_Models_Python.ipynb) Advanced Models: Lasso, Trees, Random Forests, Boosting & Causal ML
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/Clustering_and_Credit_Risk.ipynb) Clustering and Credit Risk
