@@ -15,7 +15,7 @@ A collection of Python and R notebooks for teaching and practicing core data sci
       - 01_EAIF_Linear_Models_1_Exercise_Solutions.ipynb
       - 02_EAIF_Logistic_Regression_Solutions.ipynb
     - groupwork/
-      - Group_Work_AS_2025.ipynb
+      - Group_Work_AS_2026.ipynb
   - R/
     - 01_EAIF_Linear_Models_1.ipynb
     - 02_EAIF_Logistic_Regression.ipynb
@@ -53,7 +53,7 @@ You can run each notebook directly in your browser using Google Colab. You need 
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/activity/Varian_Replication_Solutions.ipynb) Varian (2014) Replication: Solutions (instructor version)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/04_EAIF_Comparison_clustering_methods.ipynb) Clustering Methods Comparison (Toy Datasets)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/04_EAIF_Clustering_in_Finance.ipynb) Clustering in Finance (Credit Risk & Company Valuation; Parts 2 and 3 need the missing data files)
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/groupwork/Group_Work_AS_2025.ipynb) **Group Work AS 2025: ESG Investment Analysis** (scaffold plus graded tasks; the assignment brief, rubric and deadline placeholder are in the notebook; the dataset is simulated)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/groupwork/Group_Work_AS_2026.ipynb) **Group Work AS 2026: ESG and Firm Performance with Machine Learning** (scaffold plus graded tasks; the assignment brief, rubric and deadline placeholder are in the notebook; the dataset is simulated)
 - R
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/01_EAIF_Linear_Models_1.ipynb) Linear Regression (R)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/02_EAIF_Logistic_Regression.ipynb) Logistic Regression (R)
