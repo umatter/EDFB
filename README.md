@@ -1,64 +1,91 @@
-# EDFB — Digital Finance & Banking Notebooks
+# EAIF — AI for Finance Notebooks
 
-A collection of Python and R notebooks for teaching and practicing core data science topics in Digital Finance & Banking. Notebooks are prepared for easy sharing via GitHub + Google Colab and include self-bootstrapping setup cells so they run end-to-end without manual environment setup.
+A collection of Python and R notebooks for teaching and practicing core data science topics in the module EAIF (AI for Finance). The repository keeps its historical name `EDFB` so that existing links to it stay valid; the notebooks and data are loaded from it by URL. Notebooks are prepared for easy sharing via GitHub + Google Colab: each one loads its data from this repository by URL and, for R, installs its packages in a setup cell, so it runs end-to-end without manual environment setup. The course arc is linear regression (01), logistic regression and the campaign decision (02), trees, ensembles and an optional causal-ML coda (03), clustering (04), a graded group project, and a flipped-class replication of Varian (2014).
 
 ## Repository structure
 
 - notebooks/
   - Python/
-    - 01_EDFB_Linear_Models_1.ipynb
-    - 02_EDFB_Logistic_Regression.ipynb
-    - 03_EDFB_Advanced_Models_Python.ipynb
-    - 04_EDFB_Comparison_clustering_methods.ipynb
-    - 04_EDFB_Clustering_in_Finance.ipynb
+    - 01_EAIF_Linear_Models_1.ipynb
+    - 02_EAIF_Logistic_Regression.ipynb
+    - 03_EAIF_Advanced_Models_Python.ipynb
+    - 04_EAIF_Comparison_clustering_methods.ipynb
+    - 04_EAIF_Clustering_in_Finance.ipynb
+    - solutions/
+      - 01_EAIF_Linear_Models_1_Exercise_Solutions.ipynb
+      - 02_EAIF_Logistic_Regression_Solutions.ipynb
     - groupwork/
       - Group_Work_AS_2025.ipynb
   - R/
-    - 01_EDFB_Linear_Models_1.ipynb
-    - 02_EDFB_Logistic_Regression.ipynb
-    - 03_EDFB_Advanced_Models_R.ipynb
-    - Clustering_and_Credit_Risk_R.ipynb
+    - 01_EAIF_Linear_Models_1.ipynb
+    - 02_EAIF_Logistic_Regression.ipynb
+    - 03_EAIF_Advanced_Models_R.ipynb
+    - solutions/
+      - 02_EAIF_Logistic_Regression_Solutions.ipynb
+    - archive/ (superseded R versions, kept for reference; not maintained)
+- activity/
+  - EAIF_SML3_Flipped_Class_Instructions_Varian.pdf (and .docx source): pre-class reading questions, in-class plan
+  - Varian_Replication_Starter.ipynb, Varian_Replication_Solutions.ipynb
+  - FLS-data.csv
 - data/
-  - banking.csv (optional; auto-downloaded if missing)
-  - borrower_companies.csv (optional; auto-downloaded if missing)
-- data_BTC.csv (optional; auto-downloaded or simulated if missing)
+  - banking.csv (units 01 to 03)
+  - Admission_Predict.csv (unit 01)
+  - data_BTC.csv (unit 01; daily BTC close, see LICENSE_ATTRIBUTION.md)
+  - company_esg_financial_dataset.csv (group work; simulated data, CC BY 4.0, see LICENSE_ATTRIBUTION.md)
+  - LICENSE_ATTRIBUTION.md
+
+**Missing data for unit 04.** `04_EAIF_Clustering_in_Finance.ipynb` Parts 2 and 3 expect
+`data/borrower_companies.csv`, `data/financialdata_original.csv` and `data/financialdata_extra.csv`,
+which are not in this repository. Until they are added (with a licence entry in
+`data/LICENSE_ATTRIBUTION.md`), only Part 1 of that notebook runs.
 
 ## Open in Google Colab
 
 You can run each notebook directly in your browser using Google Colab. You need a Google account (free) to use Colab.
 
 - Python
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/01_EDFB_Linear_Models_1.ipynb) Linear Models (Univariate)
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/solutions/01_EDFB_Linear_Models_1_Exercise_Solutions.ipynb) Linear Models Exercise Solutions
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python//02_EDFB_Logistic_Regression.ipynb) Logistic Regression
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/03_EDFB_Advanced_Models_Python.ipynb) Advanced Models: Lasso, Trees, Random Forests, Boosting & Causal ML
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/activity/Varian_Replication_Starter.ipynb) Advanced Models -- Varian Replication Starter
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/activity/Varian_Replication_Solutions.ipynb) Advanced Models -- Varian Replication Solutions
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/04_EDFB_Comparison_clustering_methods.ipynb) Clustering Methods Comparison (Toy Datasets)
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/04_EDFB_Clustering_in_Finance.ipynb) Clustering in Finance (Credit Risk & Company Valuation)
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/Clustering_and_Credit_Risk.ipynb) Clustering and Credit Risk
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/groupwork/Group_Work_AS_2025.ipynb) **Group Work AS 2025: ESG Investment Analysis & ML Portfolio Optimization**
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/01_EAIF_Linear_Models_1.ipynb) Linear Regression (synthetic data, univariate admission example, multivariate banking model, Bitcoin returns)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/solutions/01_EAIF_Linear_Models_1_Exercise_Solutions.ipynb) Linear Regression: Exercise Solutions
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/02_EAIF_Logistic_Regression.ipynb) Logistic Regression (linear probability model, logit, odds ratios, threshold and campaign profit)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/solutions/02_EAIF_Logistic_Regression_Solutions.ipynb) Logistic Regression: Exercise Solutions
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/03_EAIF_Advanced_Models_Python.ipynb) Advanced Models: Lasso, Trees, Random Forests, Boosting, plus an optional causal-ML section (about one minute of extra runtime)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/activity/Varian_Replication_Starter.ipynb) Varian (2014) Replication: Starter (lasso variable selection on the growth data, OLS vs random forest; read the paper before class, see the instruction sheet)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/activity/Varian_Replication_Solutions.ipynb) Varian (2014) Replication: Solutions (instructor version)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/04_EAIF_Comparison_clustering_methods.ipynb) Clustering Methods Comparison (Toy Datasets)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/04_EAIF_Clustering_in_Finance.ipynb) Clustering in Finance (Credit Risk & Company Valuation; Parts 2 and 3 need the missing data files)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/groupwork/Group_Work_AS_2025.ipynb) **Group Work AS 2025: ESG Investment Analysis** (scaffold plus graded tasks; the assignment brief, rubric and deadline placeholder are in the notebook; the dataset is simulated)
 - R
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/01_EDFB_Linear_Models_1.ipynb) Linear Models (Univariate, R)
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/02_EDFB_Logistic_Regression.ipynb) Logistic Regression (R)
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/03_EDFB_Advanced_Models_R.ipynb) Advanced Models: Lasso, Trees, Random Forests, Boosting & Causal ML (R)
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/Clustering_and_Credit_Risk_R.ipynb) Clustering and Credit Risk (R)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/01_EAIF_Linear_Models_1.ipynb) Linear Regression (R)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/02_EAIF_Logistic_Regression.ipynb) Logistic Regression (R)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/solutions/02_EAIF_Logistic_Regression_Solutions.ipynb) Logistic Regression: Exercise Solutions (R)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/R/03_EAIF_Advanced_Models_R.ipynb) Advanced Models: Lasso, Trees, Random Forests, Boosting, plus an optional causal-ML section (R)
 
 Recommended student workflow:
-1. Click the corresponding “Open in Colab” badge above.
-2. In Colab, go to “File → Save a copy in Drive” to work on your own copy.
-3. Run the first “Setup” cell, then “Runtime → Run all”.
+1. Click the corresponding "Open in Colab" badge above.
+2. In Colab, go to "File → Save a copy in Drive" to work on your own copy.
+3. Run the first "Setup" cell, then "Runtime → Run all".
 4. Do not edit the original GitHub notebooks.
 
 ## Datasets
 
-Datasets are either provided in the `data/` folder or are directly downloaded by the notebooks from other sources. See the noteboooks for details on the datasets used.
+Every dataset a notebook needs is in this repository (see the structure above), with the one
+exception of the three unit 04 files noted there. Data are loaded from
+`https://raw.githubusercontent.com/umatter/EDFB/main/...` at the top of the relevant section,
+so a notebook works only once its data file is on the `main` branch; there are no fallbacks
+to other sources. Sources and licences for all five datasets are recorded in
+`data/LICENSE_ATTRIBUTION.md`. The ESG dataset used in the group
+work is simulated, which the notebook states and asks students to discuss.
 
 ## Reproducibility
 
-- Python notebooks pin library versions in the top “Setup” cell (pip installs).
-- R notebooks use a “Setup” cell that installs packages from the Posit Package Manager binary mirror for fast, reproducible installs on Colab.
-- Notes at the top of each notebook indicate the runtime versions they were tested on.
+- Python notebooks use only packages preinstalled on Colab (pandas, numpy, scikit-learn, statsmodels, matplotlib, seaborn, scipy); nothing is pip-installed.
+- R notebooks use a "Setup" cell that installs packages from the Posit Package Manager binary mirror for fast installs on Colab.
+- Seeds are fixed throughout (`random_state` / `set.seed`), and the explanatory text refers to results "in this run", since library versions on Colab change over time.
+- Before a notebook is linked here it should be executed end-to-end on a fresh Colab runtime. Notebooks are stored with outputs cleared.
+
+## For maintainers
+
+`CLAUDE.md` documents the conventions (URL-loaded data, Python/R mirrors in units 01 and 02, the decision-time leakage rule, stripped outputs) and a local execution workflow. `code_review_report.md` is the full code-and-didactics review of 2026-09-16 with a resolution log of what was fixed and what is still open (the unit 04 data files, the group-work deadline).
 
 ## Acknowledgements
 
