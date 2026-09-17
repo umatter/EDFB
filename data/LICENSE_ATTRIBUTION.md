@@ -92,3 +92,9 @@ with open("data_BTC.csv", "w", newline="") as f:
 **Underlying data:** Fernández, C., Ley, E., and Steel, M. F. J. (2001). Model Uncertainty in Cross-Country Growth Regressions. *Journal of Applied Econometrics*, 16(5), 563-576 (data originally assembled by Sala-i-Martin, 1997). The column order in this file follows the Bayesian-model-averaging ranking of Varian's comparison table.
 
 **Terms:** redistributed here for teaching with attribution; the openICPSR project's terms of use apply. Students are pointed to the openICPSR record as the authoritative source.
+
+## data/esg2026/ (simulated ESG and stock-return panel)
+
+Simulated by the EAIF course (Ulrich Matter, Bern University of Applied Sciences) in September 2026 for the
+AS 2026 group assignment. No real firms; the generator is not part of this repository. Licence: CC BY 4.0.
+The files deliberately contain data problems that the assignment asks students to find.
