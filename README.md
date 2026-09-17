@@ -31,7 +31,7 @@ A collection of Python and R notebooks for teaching and practicing core data sci
   - banking.csv (units 01 to 03)
   - Admission_Predict.csv (unit 01)
   - data_BTC.csv (unit 01; daily BTC close, see LICENSE_ATTRIBUTION.md)
-  - company_esg_financial_dataset.csv (group work; simulated data, CC BY 4.0, see LICENSE_ATTRIBUTION.md)
+  - company_esg_financial_dataset.csv (unit 04 optional exercise; simulated data, CC BY 4.0, see LICENSE_ATTRIBUTION.md)
   - esg2026/ (AS 2026 group work; simulated ESG and stock-return panel, CC BY 4.0, see LICENSE_ATTRIBUTION.md)
     - firm_year_panel.csv
     - esg_scores_restated.csv
