@@ -65,6 +65,11 @@ must be rewritten from the real data once the files are added (with a licence en
 - `notebooks/R/archive/` holds superseded R versions, unmaintained; one of them
   (`CFA_Challenge_*_R`) has markdown pasted into code cells and does not parse. Do not
   promote or edit them; delete when convenient.
+- **The take-home case (`notebooks/Python/takehome/`) is Python-only** and its data
+  (`data/mortgage2026/`) are simulated by the committed `generate_mortgage_data.py`
+  (seed 2026; `--check` prints the planted logit-vs-boosting AUC gap). The student and
+  solutions notebooks differ only in the exercise cells; the student notebook must run top to
+  bottom with the exercise cells left as comments. Design spec and plan under `docs/superpowers/`.
 
 ## Working with notebooks from the shell
 
