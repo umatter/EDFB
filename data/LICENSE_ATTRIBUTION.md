@@ -98,3 +98,11 @@ with open("data_BTC.csv", "w", newline="") as f:
 Simulated by the EAIF course (Ulrich Matter, Bern University of Applied Sciences) in September 2026 for the
 AS 2026 group assignment. No real firms; the generator is not part of this repository. Licence: CC BY 4.0.
 The files deliberately contain data problems that the assignment asks students to find.
+
+## Simulated mortgage book (take-home case, AS 2026)
+
+**Files:** `mortgage2026/mortgages.csv`, `mortgage2026/applications_2026.csv`
+
+**Source:** simulated by the course with `mortgage2026/generate_mortgage_data.py` (deterministic, seed 2026). No real bank, property or household is behind any row; the trouble rate is inflated for teaching.
+
+**License:** Creative Commons Attribution 4.0 International (CC BY 4.0), EAIF course, Bern University of Applied Sciences. Attribution: "Simulated mortgage book, EAIF: AI for Finance (BFH), CC BY 4.0."
