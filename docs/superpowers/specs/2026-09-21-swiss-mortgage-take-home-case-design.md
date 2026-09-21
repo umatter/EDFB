@@ -21,7 +21,7 @@ hours, discussed in the next class and not graded. Python only; an R mirror may 
 ## The case
 
 **Aare-Säntis Regionalbank AG** (fictional; no real bank, no real households) holds a book
-of about 8,000 residential mortgages originated 2019–2022 in seven German-speaking
+of 10,000 residential mortgages originated 2019–2022 in seven German-speaking
 cantons (ZH, BE, AG, LU, SO, SG, TG). The CRO's memo asks:
 
 - **A1 — Is our collateral valued right?** Build a valuation model for the financed
@@ -46,7 +46,7 @@ that no licensed Swiss borrower- or property-level data is redistributed.
 | File | Rows | Content |
 |---|---|---|
 | `generate_mortgage_data.py` | — | the generator; numpy + pandas only; fixed seed; `python3 generate_mortgage_data.py` rewrites the two CSVs byte-identically |
-| `mortgages.csv` | ~8,000 | the book: one row per mortgage originated 2019–2022, with the 36-month outcome |
+| `mortgages.csv` | 10,000 | the book: one row per mortgage originated 2019–2022, with the 36-month outcome |
 | `applications_2026.csv` | ~500 | this year's applications: same columns, no outcome, no leaky column |
 | `README.md` | — | data dictionary, the statement that the data are simulated, the note that the trouble rate is inflated for teaching |
 
@@ -85,23 +85,29 @@ energy label do enter the price), so that LASSO has coefficients to zero out.
 
 Prices: log price = canton level + elasticity × log area + property-type premium + age
 effect (quadratic, renovation plateau) − distance decay + energy-label step + noise, such
-that a linear model in levels reaches R² ≈ 0.75–0.8 on the test set and a log model does
+that a linear model in levels reaches R² ≈ 0.85 on the test set and a log model does
 better (the content of Exercise 1). Canton levels ordered ZH > (SG, AG, LU) > (BE, TG, SO)
 at plausible CHF-per-m² magnitudes.
 
-Trouble: log-odds = intercept + linear terms in `ltv`, `affordability`, `actual_burden`,
-self-employment and age, plus three planted structures:
+Trouble: log-odds = intercept + weak linear terms in `ltv` and `affordability`, a mild
+self-employment term, the property's price residual (buyers who overpaid relative to the
+hedonic model carry more risk; this is what Exercise 2's `overpayment` feature picks up),
+plus four planted structures a logit with main effects cannot represent:
 
 1. **Corner effect.** `affordability > 1/3` and `ltv > 0.80` together add a large jump
    (the two-threshold pattern of the SL3 Titanic slide: a tree finds it in two splits, the
    logit cannot represent it).
 2. **Interaction.** `self_employed` × `saron` adds risk beyond the two main effects.
-3. **Convexity.** The `actual_burden` effect is convex (quadratic above a knee), so that a
-   +2 pp rate stress on SARON loans moves the tree ensembles' predictions more than the
-   logit's (Exercise 7).
+3. **Rate burden on variable-rate loans only.** `actual_burden` enters linearly and
+   convexly (quadratic above a knee) for SARON loans and not at all for fixed-rate loans,
+   whose rate is locked for the horizon. This is why a +2 pp rate stress on SARON loans
+   moves the tree ensembles' predictions more than the logit's (Exercise 7).
+4. **Age U-shape.** Risk rises for the youngest borrowers (unstable income) and towards
+   the retirement cliff (income drops at 65); a logit with a linear age term sees nothing.
 
-Calibration target, checked from the run before any prose is written: logit test AUC
-about 0.78, gradient boosting and random forest about 0.84, tree of depth 3 in between.
+Calibration, checked over three seeds in a prototype and re-checked from the final run
+before any prose is written: book of 10,000 mortgages, base rate 6.5–7 %, logit test AUC
+0.78–0.83, gradient boosting and random forest 0.85–0.88, tree of depth 3 near the logit.
 The generator has a `--check` flag that fits a logit and a gradient booster on its own
 output and prints the two AUCs, so the calibration is reproducible without the notebook.
 
