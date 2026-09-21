@@ -35,6 +35,6 @@ to learn from. Licence: CC BY 4.0 (EAIF course, Bern University of Applied Scien
 | `origination_year` | 2019–2022 (book), 2026 (applications) | yes |
 | `ltv` | loan / purchase price | yes |
 | `affordability` | (5 % imputed interest on the loan + 1 % of the price for maintenance + amortisation of the part above two-thirds LTV over 15 years) / income; the Swiss lending rule says at most 1/3 | yes |
-| `actual_burden` | interest_rate × loan / income (the interest actually paid) | yes |
+| `actual_burden` | interest_rate / 100 × loan / income (the interest actually paid; `interest_rate` is in percent) | yes |
 | `trouble_36m` | 1 if arrears of 90 days or more, or a forced restructuring, within 36 months | outcome |
 | `reminders_sent` | payment reminders sent during the 36 months | **no** (known only afterwards) |

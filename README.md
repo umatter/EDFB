@@ -51,7 +51,7 @@ A collection of Python and R notebooks for teaching and practicing core data sci
 - docs/
   - superpowers/
     - specs/ (design documents)
-    - plans/ (design documents)
+    - plans/ (implementation plans)
 
 **Missing data for unit 04.** `04_EAIF_Clustering_in_Finance.ipynb` Parts 2 and 3 expect
 `data/borrower_companies.csv`, `data/financialdata_original.csv` and `data/financialdata_extra.csv`,
@@ -101,7 +101,7 @@ is committed next to the data it produces.
 
 ## Reproducibility
 
-- Python notebooks use only packages preinstalled on Colab (pandas, numpy, scikit-learn, statsmodels, matplotlib, seaborn, scipy); nothing is pip-installed.
+- Python notebooks use only packages preinstalled on Colab (pandas, numpy, scikit-learn, statsmodels, matplotlib, seaborn, scipy, xgboost); nothing is pip-installed.
 - R notebooks use a "Setup" cell that installs packages from the Posit Package Manager binary mirror for fast installs on Colab.
 - Seeds are fixed throughout (`random_state` / `set.seed`), and the explanatory text refers to results "in this run", since library versions on Colab change over time.
 - Before a notebook is linked here it should be executed end-to-end on a fresh Colab runtime. Notebooks are stored with outputs cleared.

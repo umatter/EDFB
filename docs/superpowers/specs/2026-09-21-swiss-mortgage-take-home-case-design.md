@@ -1,7 +1,7 @@
 # Take-home case: the mortgage book of a Swiss regional bank — design
 
 **Date:** 2026-09-21
-**Status:** approved in conversation, awaiting spec review
+**Status:** implemented on branch takehome-mortgage-case
 **Feeds:** the implementation plan in `docs/superpowers/plans/`
 
 ## Purpose
@@ -89,10 +89,11 @@ that a linear model in levels reaches R² ≈ 0.85 on the test set and a log mod
 better (the content of Exercise 1). Canton levels ordered ZH > (SG, AG, LU) > (BE, TG, SO)
 at plausible CHF-per-m² magnitudes.
 
-Trouble: log-odds = intercept + weak linear terms in `ltv` and `affordability`, a mild
-self-employment term, the property's price residual (buyers who overpaid relative to the
-hedonic model carry more risk; this is what Exercise 2's `overpayment` feature picks up),
-plus four planted structures a logit with main effects cannot represent:
+Trouble: log-odds = intercept + weak linear terms in `ltv` and `affordability`
+(self-employment has no main effect and enters only through its interaction with SARON,
+item 2 below), the property's price residual (buyers who overpaid relative to the hedonic
+model carry more risk; this is what Exercise 2's `overpayment` feature picks up), plus
+four planted structures a logit with main effects cannot represent:
 
 1. **Corner effect.** `affordability > 1/3` and `ltv > 0.80` together add a large jump
    (the two-threshold pattern of the SL3 Titanic slide: a tree finds it in two splits, the
