@@ -1,3 +1,4 @@
 .aider*
 slides/
-_*.superpowers/
+_*
+.superpowers/
