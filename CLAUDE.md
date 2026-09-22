@@ -69,7 +69,11 @@ must be rewritten from the real data once the files are added (with a licence en
   (`data/mortgage2026/`) are simulated by the committed `generate_mortgage_data.py`
   (seed 2026; `--check` prints the planted logit-vs-boosting AUC gap). The student and
   solutions notebooks differ only in the exercise cells; the student notebook must run top to
-  bottom with the exercise cells left as comments. Design spec and plan under `docs/superpowers/`.
+  bottom with the exercise cells left as comments. **The solutions notebook is deliberately not
+  in the repo yet**: it lives in the gitignored `_solutions/` (removed from `main` on 2026-09-22
+  so students cannot see it before the deadline; it is still in the pushed history before that
+  date). When it is released, move it back to `notebooks/Python/solutions/` and restore its
+  README badge. Design spec and plan under `docs/superpowers/`.
 
 ## Working with notebooks from the shell
 

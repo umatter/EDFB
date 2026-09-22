@@ -14,7 +14,6 @@ A collection of Python and R notebooks for teaching and practicing core data sci
     - solutions/
       - 01_EAIF_Linear_Models_1_Exercise_Solutions.ipynb
       - 02_EAIF_Logistic_Regression_Solutions.ipynb
-      - Take_Home_Case_Swiss_Mortgages_Solutions.ipynb
     - groupwork/
       - Group_Work_AS_2026.ipynb
     - takehome/
@@ -69,7 +68,6 @@ You can run each notebook directly in your browser using Google Colab. You need 
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/solutions/02_EAIF_Logistic_Regression_Solutions.ipynb) Logistic Regression: Exercise Solutions
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/03_EAIF_Advanced_Models_Python.ipynb) Advanced Models: Lasso, Trees, Random Forests, Boosting, plus an optional causal-ML section (about one minute of extra runtime)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/takehome/Take_Home_Case_Swiss_Mortgages.ipynb) **Take-Home Case: The Mortgage Book of a Swiss Regional Bank** (team exercise; linear and logistic regression recap, then LASSO, trees, random forest, boosting, XGBoost and SVM on a simulated Swiss mortgage book; about three hours)
-  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/solutions/Take_Home_Case_Swiss_Mortgages_Solutions.ipynb) Take-Home Case: Solutions (instructor version)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/activity/Varian_Replication_Starter.ipynb) Varian (2014) Replication: Starter (lasso variable selection on the growth data, OLS vs random forest; read the paper before class, see the instruction sheet)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/activity/Varian_Replication_Solutions.ipynb) Varian (2014) Replication: Solutions (instructor version)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/04_EAIF_Comparison_clustering_methods.ipynb) Clustering Methods Comparison (Toy Datasets)
