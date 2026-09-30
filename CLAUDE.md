@@ -107,5 +107,7 @@ notebook must keep stating that the ESG data are simulated.
 
 ## Git hygiene
 
-`.gitignore` excludes `slides/`, anything starting with `_`, and `.aider*`. The README asks
+`.gitignore` excludes `slides/`, anything starting with `_`, `.aider*`, and every `handed_in/`
+directory (student submissions and the feedback files written for them; they carry student
+names and must never be committed). The README asks
 for changes to notebooks to arrive as pull requests rather than direct edits to `main`.

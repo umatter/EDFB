@@ -2,3 +2,6 @@
 slides/
 _*
 .superpowers/
+
+# Student submissions and instructor feedback (personal data; never commit)
+handed_in/
