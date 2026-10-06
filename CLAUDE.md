@@ -69,11 +69,7 @@ must be rewritten from the real data once the files are added (with a licence en
   (`data/mortgage2026/`) are simulated by the committed `generate_mortgage_data.py`
   (seed 2026; `--check` prints the planted logit-vs-boosting AUC gap). The student and
   solutions notebooks differ only in the exercise cells; the student notebook must run top to
-  bottom with the exercise cells left as comments. **The solutions notebook is deliberately not
-  in the repo yet**: it lives in the gitignored `_solutions/` (removed from `main` on 2026-09-22
-  so students cannot see it before the deadline; it is still in the pushed history before that
-  date). When it is released, move it back to `notebooks/Python/solutions/` and restore its
-  README badge. Design spec and plan under `docs/superpowers/`.
+  bottom with the exercise cells left as comments. Design spec and plan under `docs/superpowers/`.
 
 ## Working with notebooks from the shell
 
@@ -111,5 +107,7 @@ notebook must keep stating that the ESG data are simulated.
 
 ## Git hygiene
 
-`.gitignore` excludes `slides/`, anything starting with `_`, and `.aider*`. The README asks
+`.gitignore` excludes `slides/`, anything starting with `_`, `.aider*`, and every `handed_in/`
+directory (student submissions and the feedback files written for them; they carry student
+names and must never be committed). The README asks
 for changes to notebooks to arrive as pull requests rather than direct edits to `main`.
