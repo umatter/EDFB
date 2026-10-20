@@ -106,3 +106,11 @@ The files deliberately contain data problems that the assignment asks students t
 **Source:** simulated by the course with `mortgage2026/generate_mortgage_data.py` (deterministic, seed 2026). No real bank, property or household is behind any row; the trouble rate is inflated for teaching.
 
 **License:** Creative Commons Attribution 4.0 International (CC BY 4.0), EAIF course, Bern University of Applied Sciences. Attribution: "Simulated mortgage book, EAIF: AI for Finance (BFH), CC BY 4.0."
+
+## US arrests data (R datasets package)
+
+**File:** `USArrests.csv` (50 US states, 1973: `Murder`, `Assault` and `Rape` arrests per 100,000 residents, `UrbanPop` = percent urban population; the state name in the first column)
+
+**Source:** the `USArrests` data frame of R's base `datasets` package, written out unchanged with `write.csv` (R 4.x). R documents it as: World Almanac and Book of Facts 1975 (crime rates); Statistical Abstracts of the United States 1975, p. 20 (urban rates); as in McNeil, D. R. (1977), *Interactive Data Analysis*, New York: Wiley. R's documentation notes a transcription error in Maryland's `UrbanPop`; the file keeps R's values so that the numbers match the slides and the R literature (e.g. ISLR).
+
+**Terms:** public statistics of the US government, distributed with R; redistributed here for teaching. Used in `04_EAIF_KMeans_Hands_On.ipynb` (PCA with and without scaling).
