@@ -11,6 +11,7 @@ A collection of Python and R notebooks for teaching and practicing core data sci
     - 03_EAIF_Advanced_Models_Python.ipynb
     - 04_EAIF_Comparison_clustering_methods.ipynb
     - 04_EAIF_Clustering_in_Finance.ipynb
+    - 04_EAIF_KMeans_Hands_On.ipynb
     - solutions/
       - 01_EAIF_Linear_Models_1_Exercise_Solutions.ipynb
       - 02_EAIF_Logistic_Regression_Solutions.ipynb
@@ -35,6 +36,7 @@ A collection of Python and R notebooks for teaching and practicing core data sci
   - Admission_Predict.csv (unit 01)
   - data_BTC.csv (unit 01; daily BTC close, see LICENSE_ATTRIBUTION.md)
   - company_esg_financial_dataset.csv (unit 04 optional exercise; simulated data, CC BY 4.0, see LICENSE_ATTRIBUTION.md)
+  - USArrests.csv (unit 04 hands-on notebook; R's US arrests data, 50 states in 1973, see LICENSE_ATTRIBUTION.md)
   - esg2026/ (AS 2026 group work; simulated ESG and stock-return panel, CC BY 4.0, see LICENSE_ATTRIBUTION.md)
     - firm_year_panel.csv
     - esg_scores_restated.csv
@@ -72,6 +74,7 @@ You can run each notebook directly in your browser using Google Colab. You need 
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/solutions/Take_Home_Case_Swiss_Mortgages_Solutions.ipynb) Take-Home Case: Solutions (instructor version)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/activity/Varian_Replication_Starter.ipynb) Varian (2014) Replication: Starter (lasso variable selection on the growth data, OLS vs random forest; read the paper before class, see the instruction sheet)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/activity/Varian_Replication_Solutions.ipynb) Varian (2014) Replication: Solutions (instructor version)
+  - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/04_EAIF_KMeans_Hands_On.ipynb) Unsupervised Learning: Hands-On Companion to the Slides (one short block per slide, to run during the lecture: k-means steps and starting values, WCSS/BCSS, elbow, silhouette, validation, outliers, failing shapes, DBSCAN, dendrogram, scaling, PCA)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/04_EAIF_Comparison_clustering_methods.ipynb) Clustering Methods Comparison (Toy Datasets)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/04_EAIF_Clustering_in_Finance.ipynb) Clustering in Finance (Credit Risk & Company Valuation; Parts 2 and 3 need the missing data files)
   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umatter/EDFB/blob/main/notebooks/Python/groupwork/Group_Work_AS_2026.ipynb) **Group Work AS 2026: ESG and Firm Performance with Machine Learning** (scaffold plus graded tasks; the assignment brief, rubric and deadline placeholder are in the notebook; the dataset is simulated)

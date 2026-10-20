@@ -101,8 +101,8 @@ after pushing. Say so if that step was not done.
 `data/LICENSE_ATTRIBUTION.md` has an entry for every dataset in use: the ESG dataset
 (Kaggle, CC BY 4.0, simulated), the BTC daily close series (Binance public API, with the
 script that rebuilds it), the UCI bank-marketing data (CC BY 4.0), the Kaggle graduate
-admission data, and the Fernández-Ley-Steel growth data from Varian's openICPSR replication
-package. Any new dataset under `data/` or `activity/` needs an entry there. The group-work
+admission data, the Fernández-Ley-Steel growth data from Varian's openICPSR replication
+package, and R's `USArrests` (used by the unit 04 hands-on notebook). Any new dataset under `data/` or `activity/` needs an entry there. The group-work
 notebook must keep stating that the ESG data are simulated.
 
 ## Git hygiene
